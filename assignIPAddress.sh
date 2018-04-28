@@ -100,7 +100,7 @@ echo '----------Secondary interfaces--------------'
 
 sudo docker exec --privileged SC1 ip addr add 10.0.5.1/24 dev vethsc1_2
 sudo docker exec --privileged SC1 ip link set vethsc1_2 up
-sudo docker exec --privileged LC2 ip addr add 10.0.5.1/24 dev vethlc2_2
+sudo docker exec --privileged LC2 ip addr add 10.0.5.2/24 dev vethlc2_2
 sudo docker exec --privileged LC2 ip link set vethlc2_2 up
 
 sudo docker exec --privileged SC2 ip addr add 10.0.7.1/24 dev vethsc2_2
